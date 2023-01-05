@@ -114,14 +114,18 @@ package trie;
 	}
 
 	public static void main(String[] args) {
-		StringBuilder sb = new StringBuilder();
-		sb.append('a');
-		sb.append('b');
-		sb.deleteCharAt(sb.length() - 1);
-//		System.out.println(sb.toString());
-		int i = 3;
-		char ch = (char) ('a' + i);
-		System.out.println(ch);
+//		StringBuilder sb = new StringBuilder();
+//		sb.append('a');
+//		sb.append('b');
+//		sb.deleteCharAt(sb.length() - 1);
+////		System.out.println(sb.toString());
+//		int i = 3;
+//		char ch = (char) ('a' + i);
+//		System.out.println(ch);
+		
+		String s = "abc";
+		String t = "acd";
+		System.out.println(s.compareTo(t));
 
 	}
 

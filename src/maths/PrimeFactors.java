@@ -1,6 +1,8 @@
 package maths;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class PrimeFactors {
@@ -26,7 +28,22 @@ public class PrimeFactors {
 	}
 
 	public static void main(String[] args) {
-		
+//	           int arr [][] = {{1,2,23,4,5,6},
+//	        		            {5,7,3,69,8}};
+//	          int b [][] =  Arrays.copyOf(arr,arr.length);
+	          
+	          ArrayList<Integer> list = new ArrayList<>();
+	          list.add(1);
+	          list.add(2);
+	          list.add(3);
+	          list.add(4);
+	          list.add(6);
+	          
+	          
+	          int ind = Collections.binarySearch(list, 5);
+	          System.out.println(ind);
+	         
+	         
 
 	}
 

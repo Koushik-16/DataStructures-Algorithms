@@ -25,7 +25,7 @@ public class ZeroOneBFS {
 			if(curr.v == n-1) return curr.weight;
 			visited[curr.v]= true;
 			for(Pair it : adj.get(curr.v)) {
-				if(visited[it.v] == false) continue;
+				if(visited[it.v] == true) continue;
 				if(it.weight == 0) {
 					dq.addFirst(new Pair(it.v,curr.weight));
 				}else {

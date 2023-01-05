@@ -14,7 +14,7 @@ public class ZAlgo {
 		int n = s.length();
 		int z [] = new int[n];
 		int l = 0 , r = 0;
-		for(int i = 0 ; i < n ; i++) {
+		for(int i = 1 ; i < n ; i++) {
 			if(r >= i) z[i] = Math.min(r - i + 1, z[i - l]);
 			while(i + z[i] < n && s.charAt(z[i]) == s.charAt(i + z[i])) z[i]++;
 			if(i + z[i] - 1 > r) {

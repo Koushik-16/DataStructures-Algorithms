@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class DistinctIslands {
 	
-	static StringBuilder sb  = new StringBuilder();
+	static StringBuilder sb  ;
 	
 	public static int numberOfDistinctIslands(int grid [][]) {
 		HashSet<String> set = new HashSet<>();
